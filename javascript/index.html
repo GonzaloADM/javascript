@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-color: blueviolet;
+        }
+        .tipografia{
+            font-family:Verdana, Geneva, Tahoma, sans-serif ;
+            background-color: beige;
+        }
+    
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <ul></ul>
+    <button onclick="ponerTipografia()">CAMBIAR TIPOGRAFIA</button>
+    
+</body>
+<script>
+    /*const nombre = prompt("Decime Tu Nombre")*/
+    /*confirm( "¿te gusta el monster?" )*/
+    /* NODOS*/
+    document.querySelector("h1").innerText="MONSTER " 
+    document.querySelector("ul").innerHTML = "<li>uno</li><li>dos</li><li>tres</li>"
+
+    /* Funcion*/
+    function ponerTipografia(){
+        const nombre = prompt("Decime Tu Nombre")
+        document.querySelector("body").style.backgroundColor = "red"
+        document.querySelector("body").classList.toggle("tipografia")
+    }
+</script>
+</html>
